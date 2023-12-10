@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>PHP Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="frm">
+        <h1>Create an Account</h1>
+        <form name="f2" action="registration.php" onsubmit="return registrationValidation()" method="POST">
+            <p>
+                <label> UserName: </label>
+                <input type="text" id="newUser" name="newUser" />
+            </p>
+            <p>
+                <label> Password: </label>
+                <input type="password" id="newPass" name="newPass" />
+            </p>
+            <p>
+                <input type="submit" id="registerBtn" value="Register" />
+            </p>
+        </form>
+        <p class="login-link">
+            <a href="index.php">Back to Login</a>
+        </p>
+    </div>
+</body>
+</html>
